@@ -50,6 +50,9 @@ export default {
         this.weekendList = data.weekendList;
       }
     }
+  },
+  activated(){
+    this.getHomeInfo();
   }
 };
 </script>
