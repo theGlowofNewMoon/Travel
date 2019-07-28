@@ -8,6 +8,7 @@ import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from "./store"
 import 'swiper/dist/css/swiper.css'
 import 'styles/reset.css'
 import 'styles/border.css'
@@ -16,10 +17,12 @@ import 'styles/iconfont.css'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
+console.log(store)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
